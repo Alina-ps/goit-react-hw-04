@@ -10,6 +10,9 @@ const SearchBar = () => {
         />
         <button type="submit">Search</button>
       </form>
+      <div>
+        <Toaster />
+      </div>
     </header>
   );
 };
