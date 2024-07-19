@@ -1,15 +1,15 @@
 import axios from "axios";
 
-const fectImages = async (query, page = 0) => {
-  const response = await axios.get(
-    `<https://api.unsplash.com/search/collections>`,
-    {
-      params: {
-        query,
-        page,
-      },
-    }
-  );
+export const fetchImages = async (query, page = 1) => {
+  const response = await axios.get(`https://api.unsplash.com/search/photos`, {
+    params: {
+      query,
+      page,
+      per_page: 12,
+      client_id: "_soVHS32Pd5zH1PgNHtQg0IhnnU-LSc2Z1UR8qS4r1g",
+    },
+  });
+
   return response.data;
 };
 
