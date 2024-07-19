@@ -1,0 +1,22 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 100px;
+  padding-bottom: 24px;
+}
+
+.galleryItem {
+  border: 3px solid #d5cae4;
+  width: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.galleryItem:hover {
+  transform: scale(1.02);
+}

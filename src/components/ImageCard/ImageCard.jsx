@@ -1,7 +1,8 @@
-const ImageCard = ({ src, alt }) => {
+import s from "./ImageCard.module.css";
+const ImageCard = ({ src, alt, onClick }) => {
   return (
-    <div>
-      <img src={src} alt={alt} />
+    <div onClick={onClick} className={s.imageCard}>
+      <img src={src} alt={alt} className={s.image} />
     </div>
   );
 };
