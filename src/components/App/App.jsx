@@ -9,8 +9,8 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 function App() {
   const [results, setResults] = useState([]);
-  const [query, setQuery] = useState("");
-  const [page, setPage] = useState(0);
+  const [query, setQuery] = useState("sky");
+  const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [total, setTotal] = useState(0);
@@ -41,7 +41,7 @@ function App() {
   const handleSetQuery = (newQuery) => {
     setQuery(newQuery);
     setResults([]);
-    setPage(0);
+    setPage(1);
   };
 
   const handleSetPage = () => {
