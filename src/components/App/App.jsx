@@ -10,7 +10,7 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 function App() {
   const [results, setResults] = useState([]);
   const [query, setQuery] = useState("");
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [total, setTotal] = useState(0);
@@ -41,7 +41,7 @@ function App() {
   const handleSetQuery = (newQuery) => {
     setQuery(newQuery);
     setResults([]);
-    setPage(1);
+    setPage(0);
   };
 
   const handleSetPage = () => {
@@ -61,7 +61,7 @@ function App() {
   return (
     <>
       <SearchBar setQuery={handleSetQuery} />
-      {isError && <ErrorMessage />}
+      {isError === true && <ErrorMessage />}
       <ImageGallery results={results} onImageClick={openModal} />
       {isLoading && <Loader />}
       {total > results.length && !isLoading && (

@@ -40,8 +40,3 @@ input:focus {
   border: 2px solid #e59462;
   outline: 0;
 }
-
-.toast {
-  background-color: #d5cae4;
-  color: #e1e5eb;
-}
