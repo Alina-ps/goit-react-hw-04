@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: start;
-  background-color: #d5cae4;
-  border-bottom: 2px solid #e59462;
+  background-color: #1e1f21;
+  border-bottom: 2px solid #0ccd46;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,24 +33,25 @@
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #e59462;
-  background-color: #d5cae4;
+  color: #0ccd46;
+  background-color: #1e1f21;
   padding: 4px 0px 4px 8px;
-  border: 2px solid #e59462;
+  border: 2px solid #0ccd46;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input::placeholder {
-  color: #e1e5eb;
+  color: #c9d6cb;
 }
 
 .input:hover {
-  border: 2px solid #e59462;
+  border: 2px solid #0ccd46;
 }
 
 .input:focus {
-  border: 2px solid #e59462;
+  border: 2px solid #0ccd46;
+
   outline: 0;
 }
 

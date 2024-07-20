@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: #d5cae4;
+  background-color: #1e1f21;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,13 +21,13 @@ button {
   height: 25px;
   padding: 4px 8px 4px 8px;
   border-radius: 8px;
-  color: #d5cae4;
+  color: #1e1f21;
   border: none;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #e59462;
+  background-color: #0ccd46;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -37,8 +37,8 @@ button {
 button:hover,
 button:focus,
 button:active {
-  background-color: #e1854c;
-  color: #d5cae4;
+  background-color: #089532;
+  color: #1e1f21;
   transform: scale(0.98);
   outline: none;
 }
