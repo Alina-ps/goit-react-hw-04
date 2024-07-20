@@ -18,7 +18,7 @@ const SearchBar = ({ setQuery }) => {
     <header className={s.header}>
       <Toaster position="top-center" reverseOrder={false} />
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-        <Form>
+        <Form className={s.searchForm}>
           <Field
             className={s.input}
             type="text"

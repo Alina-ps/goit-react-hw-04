@@ -7,11 +7,12 @@
   align-items: baseline;
   padding-top: 100px;
   padding-bottom: 24px;
+  padding-left: 0;
 }
 
 .galleryItem {
   border: 3px solid #d5cae4;
-  width: 360px;
+  width: 250px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -19,4 +20,10 @@
 
 .galleryItem:hover {
   transform: scale(1.02);
+}
+
+@media screen and (min-width: 768px) {
+  .galleryItem {
+    width: 360px;
+  }
 }
