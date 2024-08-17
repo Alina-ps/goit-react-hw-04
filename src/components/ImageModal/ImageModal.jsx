@@ -1,19 +1,19 @@
-import { useEffect } from "react";
-import Modal from "react-modal";
-import s from "./ImageModal.module.css";
+import { useEffect } from 'react';
+import Modal from 'react-modal';
+import s from './ImageModal.module.css';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 const ImageModal = ({ image, isOpen, closeModal }) => {
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
+      if (e.key === 'Escape') {
         closeModal();
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [closeModal]);
 
   const handleBackdropClick = (e) => {
@@ -30,9 +30,6 @@ const ImageModal = ({ image, isOpen, closeModal }) => {
       overlayClassName={s.overlay}
     >
       <div className={s.modalWrapper} onClick={handleBackdropClick}>
-        {/* <button onClick={closeModal} className={s.closeBtn}>
-          &times;
-        </button> */}
         {image && (
           <img
             src={image.urls.regular}
