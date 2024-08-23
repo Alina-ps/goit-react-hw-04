@@ -1,11 +1,11 @@
 .imageCard {
-  position: relative;
+  /* position: relative; */
   /* width: 250px; */
-  width: 250px;
-  height: 250px;
+  /* width: 250px;
+  height: 250px; */
   /* padding-bottom: 100%; */
   /* overflow: hidden; */
-  cursor: zoom-in;
+  /* cursor: zoom-in; */
   /* border-radius: 8px; */
 }
 
@@ -20,8 +20,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .imageCard {
+  /* .imageCard {
     width: 360px;
     height: 360px;
-  }
+  } */
 }
