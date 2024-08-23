@@ -13,6 +13,7 @@
 .galleryItem {
   border: 3px solid #1e1f21;
   width: 250px;
+  height: 250px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(62, 224, 51, 0.4);
@@ -25,5 +26,6 @@
 @media screen and (min-width: 768px) {
   .galleryItem {
     width: 360px;
+    height: 360px;
   }
 }
